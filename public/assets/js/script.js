@@ -2,6 +2,7 @@
 
 	"use strict";
 
+	window.conferences = undefined
 
 	//Hide Loading Box (Preloader)
 	function handlePreloader() {
@@ -10,6 +11,39 @@
 		}
 	}
 
+	function counterDisplay() {
+		let countDownDate = new Date('Sep 25, 2022 16:37:52').getTime()
+
+    const myfunc = setInterval(() => {
+      let now = new Date().getTime()
+      let timeleft = countDownDate - now
+      let days = Math.floor(timeleft / (1000 * 60 * 60 * 24))
+      let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
+      let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60))
+      let seconds = Math.floor((timeleft % (1000 * 60)) / 1000)
+      document.getElementById('days').innerHTML = days
+      document.getElementById('hours').innerHTML = hours
+      document.getElementById('mins').innerHTML = minutes
+      document.getElementById('secs').innerHTML = seconds
+    }, 1000)
+	}
+
+	function loadSelects() {
+		$.ajax('/assets/json/conference.json', {
+			dataType: 'json',
+			timeout: 500,
+			success: function (data) {
+				localStorage.setItem('conferences', JSON.stringify(data))
+				window.conferences = data
+				for (const days in data) {
+					$('#inputDay').append(`<option value="${days}">${days.replaceAll('_', ' ')}</option>`)
+				}
+			},
+			error: function (jqXhr, textStatus, errorMessage) {
+				console.log(jqXhr, textStatus, errorMessage)
+			}
+		});
+	}
 
 	//Update Header Style and Scroll to Top
 	function headerStyle() {
@@ -321,26 +355,6 @@
 	}
 
 
-	//Tabs Box
-	if($('.tabs-box').length){
-		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
-			e.preventDefault();
-			var target = $($(this).attr('data-tab'));
-
-			if ($(target).is(':visible')){
-				return false;
-			}else{
-				target.parents('.tabs-box').find('.tab-buttons').find('.tab-btn').removeClass('active-btn');
-				$(this).addClass('active-btn');
-				target.parents('.tabs-box').find('.tabs-content').find('.tab').fadeOut(0);
-				target.parents('.tabs-box').find('.tabs-content').find('.tab').removeClass('active-tab');
-				$(target).fadeIn(300);
-				$(target).addClass('active-tab');
-			}
-		});
-	}
-
-
 	//Fact Counter + Text Count
 	if($('.count-box').length){
 		$('.count-box').appear(function(){
@@ -429,18 +443,6 @@
 			mainClass: 'mfp-fade',
 		});
 	}
-
-
-	//Event Countdown Timer
-/* 	if($('.time-countdown').length){
-		$('.time-countdown').each(function() {
-		var $this = $(this), finalDate = $(this).data('countdown');
-		$this.countdown(finalDate, function(event) {
-			var $this = $(this).html(event.strftime('' + '<div class="counter-column"><span class="count">%D</span><span class="unit">Days</div></div> ' + '<div class="counter-column"><span class="count">%H</span><span class="unit">Hrs</div></div>  ' + '<div class="counter-column"><span class="count">%M</span><span class="unit">Mins</div></div>  ' + '<div class="counter-column"><span class="count">%S</span><span class="unit">Secs</div></div>'));
-		});
-	 });
-	} */
-
 
 
 	if($('.paroller').length){
@@ -543,8 +545,147 @@
    ========================================================================== */
 
 	$(window).on('load', function() {
-		handlePreloader();
+		handlePreloader()
+		counterDisplay()
+		loadSelects()
 		//sortableMasonry();
 	});
 
 })(window.jQuery);
+
+function tabs() {
+		if($('.tabs-box').length) {
+		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
+			e.preventDefault();
+			var target = $($(this).attr('data-tab'));
+
+			if ($(target).is(':visible')) {
+				return false;
+			} else {
+				$('#default-content').hide()
+				target.parents('.tabs-box').find('.tab-buttons').find('.tab-btn').removeClass('active-btn');
+				$(this).addClass('active-btn');
+				target.parents('.tabs-box').find('.tabs-content').find('.tab').fadeOut(0);
+				target.parents('.tabs-box').find('.tabs-content').find('.tab').removeClass('active-tab');
+				$(target).fadeIn(300);
+				$(target).addClass('active-tab');
+			}
+		});
+	}
+}
+
+function changeDay(day) {
+	const events = window.conferences[day.value]
+	$('#tabs-content').html('')
+	$('#default-content').hide()
+	$('#courses').hide()
+	const [dayString, dayNumber, , monthString] = day.value.split('_')
+	$('#tabs-rooms').html('')
+	for (const room in events) {
+		if (room !== 'default' && room !== 'courses') {
+			$('#tabs-rooms').append(`<li data-tab="#${room}" class="tab-btn">${room.replace('_', ' ')} <span>${dayString} - ${monthString} ${dayNumber}, 2022</span></li>`)
+			generateContentTabs(events, room)
+		} else if (room === 'default') {
+			$('#default-content').show()
+			generateDefaultsOptions(events.default)
+		} else if (room === 'courses') {
+			$('#courses').show()
+			generateCoursesOptions(events.courses)
+		}
+	}
+	tabs()
+}
+
+function generateContentTabs(events, room) {
+	const tabs_content = $('#tabs-content')
+	tabs_content.append(`<div class="tab" id="${room}"></div>`)
+	events[room].forEach(element => {
+		$(`#${room}`).append(`${templateContent(element)}`)
+	})
+}
+
+function generateDefaultsOptions(events) {
+	const tabs_content = $('#default-content')
+	tabs_content.html('')
+	events.forEach(element => {
+		tabs_content.append(templateContent(element))
+	})
+}
+
+function generateCoursesOptions(events) {
+	const courses_content = $('#courses')
+	events.forEach((element, index) => {
+		const { hour_center, hour_tijuana, modalidad, participants, photo, pill, place, theme } = element
+		courses_content.append(`<div class="event-block">
+			<div class="inner-box">
+				<div class="row clearfix">
+					<div class="image-column col-lg-5 col-sm-12 col-md-12">
+						<div class="inner-column">
+							<div class="image">
+								<img style="max-width: 250px; max-height: 170px" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
+								<div class="overlay-box">
+									<div class="overlay-inner">
+										<div class="content">
+											<h3><a href="javascript:void(0)">CURSO ${index + 1}</a></h3>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="event-time">
+								<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
+								${ hour_center !== ''
+									? `<small class="text-muted">Hora Local Centro</small><br> ${hour_center}`
+									: ''
+								}
+							</div>
+						</div>
+					</div>
+					<div class="info-column col-lg-7 col-sm-12 col-md-12">
+						<div class="inner-column">
+							${participants.map(participant => {
+								return `<div class="name">${participant.name}</div>`
+							}).join('')}
+							<h2><a href="javascript:void(0)">${theme}</a></h2>
+							<div class="text">${place}</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>`)
+	})
+}
+
+function templateContent(event) {
+	const { grade, hour_center, hour_tijuana, modalidad, name, photo, pill, theme } = event
+	return `<div class="event-block">
+		<div class="inner-box">
+			<div class="row clearfix">
+				<div class="image-column col-lg-5 col-sm-12 col-md-12">
+					<div class="inner-column">
+						<div class="image">
+							<img style="max-width: 250px; max-height: 170px" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<div class="content">
+										<h3><a href="javascript:void(0)">${pill !== '' ? pill : `Evento`}</a></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="event-time">
+							<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
+							<small class="text-muted">Hora Local Centro</small><br> ${hour_center}
+						</div>
+					</div>
+				</div>
+				<div class="info-column col-lg-7 col-sm-12 col-md-12">
+					<div class="inner-column">
+						<div class="name">${name}</div>
+						<h2><a href="javascript:void(0)">${theme}</a></h2>
+						<div class="text">${grade}</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>`
+}

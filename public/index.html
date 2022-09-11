@@ -106,7 +106,7 @@
                   <a href="javascript:void(0)" class="icon flaticon-shopping-cart"></a>
                 </div>
                 <div class="btn-box">
-                  <a href="javascript:void(0)" class="theme-btn btn-style-one">book a Ticket</a>
+                  <a href="javascript:void(0)" class="theme-btn btn-style-one">Comprar boletos</a>
                 </div>
               </div>
             </div>
@@ -206,10 +206,10 @@
               <div class="inner-column">
                 <div class="time-counter">
                   <div class="time-countdown clearfix">
-                    <div class="counter-column"><span class="count" id="days">%D</span><span class="unit">Días</div>
-                    <div class="counter-column"><span class="count" id="hours">%H</span><span class="unit">Hrs</div>
-                    <div class="counter-column"><span class="count" id="mins">%M</span><span class="unit">Mins</div>
-                    <div class="counter-column"><span class="count" id="secs">%S</span><span class="unit">Secs</div>
+                    <div class="counter-column"><span class="count" id="days">00</span><span class="unit">Días</div>
+                    <div class="counter-column"><span class="count" id="hours">00</span><span class="unit">Hrs</div>
+                    <div class="counter-column"><span class="count" id="mins">00</span><span class="unit">Mins</div>
+                    <div class="counter-column"><span class="count" id="secs">00</span><span class="unit">Secs</div>
                   </div>
                 </div>
               </div>
@@ -494,241 +494,26 @@
           <div class="separator"></div>
         </div>
 
+        <div class="row d-flex justify-content-center">
+          <div class="col-6 p-5">
+            <div class="form-group">
+              <select id="inputDay" class="custom-select custom-select-lg mb-3" onchange="changeDay(this)">
+                <option selected disabled>Selecciona el día</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
         <div class="events-info-tabs">
           <div class="events-tabs tabs-box">
 
-            <ul class="tab-btns tab-buttons clearfix">
-              <li data-tab="#day-one" class="tab-btn active-btn">Día 1 <span>Sabado - Septiembre 12, 2022</span></li>
-              <li data-tab="#day-two" class="tab-btn">Día 2 <span>Lunes - Septiembre 13, 2022</span></li>
-              <li data-tab="#day-three" class="tab-btn">Día 3 <span>Jueves - Septiembre 14, 2022</span></li>
-            </ul>
+            <ul class="tab-btns tab-buttons clearfix" id="tabs-rooms"></ul>
 
-            <div class="tabs-content">
-              <div class="tab active-tab" id="day-one">
-                <div class="content">
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Talleres</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">Paul Wilson</div>
-                            <h2><a href="javascript:void(0)">Focus On Dynamics</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Talleres</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">George Tim</div>
-                            <h2><a href="javascript:void(0)">The Instant Results</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="sec-title" id="courses"></div>
 
-              <div class="tab" id="day-two">
-                <div class="content">
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Workshop</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">George Tim</div>
-                            <h2><a href="javascript:void(0)">The Instant Results</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Workshop</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">Robert Gates</div>
-                            <h2><a href="javascript:void(0)">Growing Power Politics</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="content" id="default-content"></div>
 
-              <div class="tab" id="day-three">
-                <div class="content">
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Workshop</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">Robert Gates</div>
-                            <h2><a href="javascript:void(0)">Growing Power Politics</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Event block -->
-                  <div class="event-block">
-                    <div class="inner-box">
-                      <div class="row clearfix">
-                        <!-- Image Column -->
-                        <div class="image-column col-lg-5 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="image">
-                              <img src="assets/img/resources/event-1.jpg" alt="" />
-                              <!--Overlay Box-->
-                              <div class="overlay-box">
-                                <div class="overlay-inner">
-                                  <div class="content">
-                                    <h3><a href="javascript:void(0)">Workshop</a></h3>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="event-time">9:00 am <br> --- <br> 11:00 am</div>
-                          </div>
-                        </div>
-                        <!-- Info Column -->
-                        <div class="info-column col-lg-7 col-sm-12 col-md-12">
-                          <div class="inner-column">
-                            <div class="name">George Tim</div>
-                            <h2><a href="javascript:void(0)">Inspiration Of Arctics</a></h2>
-                            <div class="text">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                              comdo
-                              sed conseqa irure dolorn reprehenderit voluptate velit esse excepteur sint occaecats.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div class="tabs-content" id="tabs-content"></div>
 
           </div>
         </div>
@@ -1287,23 +1072,6 @@
   <script src="assets/js/jquery-ui.js"></script>
   <script src="assets/js/paroller.js"></script>
   <script src="assets/js/script.js"></script>
-
-  <script>
-    let countDownDate = new Date('Sep 25, 2022 16:37:52').getTime()
-
-    const myfunc = setInterval(() => {
-      let now = new Date().getTime()
-      let timeleft = countDownDate - now
-      let days = Math.floor(timeleft / (1000 * 60 * 60 * 24))
-      let hours = Math.floor((timeleft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-      let minutes = Math.floor((timeleft % (1000 * 60 * 60)) / (1000 * 60))
-      let seconds = Math.floor((timeleft % (1000 * 60)) / 1000)
-      document.getElementById('days').innerHTML = days
-      document.getElementById('hours').innerHTML = hours
-      document.getElementById('mins').innerHTML = minutes
-      document.getElementById('secs').innerHTML = seconds
-    }, 1000)
-  </script>
 
 </body>
 
