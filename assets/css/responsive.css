@@ -1,3 +1,8 @@
+.speaker-image {
+	max-width: 250px;
+	max-height: 170px
+}
+
 @media only screen and (max-width: 5000px) {
 
 	.page-wrapper {
@@ -1126,6 +1131,11 @@
 
 @media only screen and (max-width: 479px) {
 
+	.speaker-image {
+		max-width: 185px;
+		max-height: 170px;
+	}
+
 	.main-header .search-box-outer .dropdown-menu {
 		top: 44px;
 	}
@@ -1249,7 +1259,8 @@
 	.event-block .inner-box .image-column .image {
 		position: relative;
 		margin-bottom: 15px;
-		width: 100%;
+		/* width: 100%; */
+		max-width: 185px;
 	}
 
 	.event-block .inner-box .image-column .image img {

@@ -622,7 +622,7 @@ function generateCoursesOptions(events) {
 					<div class="image-column col-lg-5 col-sm-12 col-md-12">
 						<div class="inner-column">
 							<div class="image">
-								<img style="max-width: 250px; max-height: 170px" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
+								<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
 								<div class="overlay-box">
 									<div class="overlay-inner">
 										<div class="content">
@@ -663,7 +663,7 @@ function templateContent(event) {
 				<div class="image-column col-lg-5 col-sm-12 col-md-12">
 					<div class="inner-column">
 						<div class="image">
-							<img style="max-width: 250px; max-height: 170px" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
+							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
 							<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
