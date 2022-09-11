@@ -6,7 +6,7 @@ const sass = require('gulp-sass')(require('sass'))
 const sourcemaps = require('gulp-sourcemaps')
 
 const cleanup = () =>
-  del(['./public/assets/css/*.css', './public/assets/js/*.js'])
+  del(['./assets/css/*.css', './assets/js/*.js'])
 
 const reload = (done) => {
   browsersync.reload()
@@ -14,9 +14,9 @@ const reload = (done) => {
 }
 
 const watchedFiles = () => {
-  watch('./src/**/*.js', series(buildJavascript))
-  watch('./src/assets/scss/**/*.scss', series(buildStyles))
-  watch('./public/*.html', reload)
+  watch('./assets/js/**/*.js', reload)
+  watch('./assets/scss/**/*.scss', series(buildStyles))
+  watch('**/*.html', reload)
   watch('**/*.json', reload)
 }
 
@@ -25,23 +25,23 @@ const buildJavascript = () => {
     .pipe(sourcemaps.init())
     .pipe(babel())
     .pipe(sourcemaps.write('.'))
-    .pipe(dest('./public/assets/js'))
+    .pipe(dest('./assets/js'))
     .pipe(browsersync.stream())
 }
 
 const buildStyles = () => {
-  return src('./src/assets/scss/**/*.scss')
+  return src('./assets/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
     .pipe(sourcemaps.write('./maps'))
-    .pipe(dest('./public/assets/css'))
+    .pipe(dest('./assets/css'))
     .pipe(browsersync.stream())
 }
 
 const server = () => {
   browsersync.init({
     server: {
-      baseDir: './public'
+      baseDir: './'
     },
     open: false
   })

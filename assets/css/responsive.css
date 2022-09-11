@@ -3,6 +3,11 @@
 	max-height: 170px
 }
 
+.image-carousel {
+	max-width: 144px;
+	max-height: 168px;
+}
+
 @media only screen and (max-width: 5000px) {
 
 	.page-wrapper {

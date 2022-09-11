@@ -10,7 +10,8 @@
         "hour_center": "11:00 - 11:50",
         "pill": "Conferencia Magistral",
         "modalidad": "",
-        "photo": "linda_lara_jacobo.jpeg"
+        "photo": "linda_lara_jacobo.jpeg",
+        "nationality": "ca"
       },
       {
         "name": "",
@@ -21,7 +22,8 @@
         "hour_center": "12:00 - 12:45",
         "pill": "",
         "modalidad": "",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "",
@@ -32,7 +34,8 @@
         "hour_center": "12:45 - 13:15",
         "pill": "",
         "modalidad": "",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       }
     ],
     "Sala_1": [
@@ -45,7 +48,8 @@
         "hour_center": "13:15 - 14:10",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "alejandro_martinez_sanchez.jpeg"
+        "photo": "alejandro_martinez_sanchez.jpeg",
+        "nationality": ""
       },
       {
         "name": "PhD. Adriana Sujey Beltrán López",
@@ -56,7 +60,8 @@
         "hour_center": "13:15 - 14:10",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "adriana_beltran_lopez.jpeg"
+        "photo": "adriana_beltran_lopez.jpeg",
+        "nationality": "us"
       },
       {
         "name": "",
@@ -67,7 +72,8 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -78,7 +84,8 @@
         "hour_center": "15:10 - 15:40",
         "pill":"Conferencia Magistral",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "damiano_buratto.jpg"
+        "photo": "damiano_buratto.jpg",
+        "nationality": "cn"
       },
       {
         "name": "",
@@ -89,7 +96,8 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Mirna Brito Perea",
@@ -100,7 +108,8 @@
         "hour_center": "17:00 - 19:00",
         "pill": "Coordinador",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
-        "photo": "mirna_brito.jpeg"
+        "photo": "mirna_brito.jpeg",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Luis Esaú López Jácome",
@@ -111,7 +120,8 @@
         "hour_center": "17:00 - 17:40",
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
-        "photo": "luis_esau_lopez.png"
+        "photo": "luis_esau_lopez.png",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Silvia Giono Cerezo",
@@ -122,7 +132,8 @@
         "hour_center": "17:40 - 18:20",
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
-        "photo": "silvia_giono_cerezo.png"
+        "photo": "silvia_giono_cerezo.png",
+        "nationality": ""
       },
       {
         "name": "M. en C. Miguel Ruiz Jiménez",
@@ -133,7 +144,8 @@
         "hour_center": "18:20 - 19:00",
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
-        "photo": "miguel_ruiz_jimenez.png"
+        "photo": "miguel_ruiz_jimenez.png",
+        "nationality": ""
       }
     ],
     "Sala_2": [
@@ -146,7 +158,8 @@
         "hour_center": "13:15 - 14:10",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "elias_miranda_gonzalez.png"
+        "photo": "elias_miranda_gonzalez.png",
+        "nationality": ""
       },
       {
         "name": "QBP. Víctor Baltazar Escobar",
@@ -157,7 +170,8 @@
         "hour_center": "14:10 - 15:10",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "victor_baltazar_escobar.png"
+        "photo": "victor_baltazar_escobar.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -168,7 +182,8 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -179,7 +194,8 @@
         "hour_center": "15:40 - 16:40",
         "pill":"Conferencia Magistral",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "damiano_buratto.jpg"
+        "photo": "damiano_buratto.jpg",
+        "nationality": "cn"
       },
       {
         "name": "",
@@ -190,7 +206,8 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. Carlos Vera Hernández",
@@ -201,7 +218,8 @@
         "hour_center": "17:00 - 18:00",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "carlos_vera.png"
+        "photo": "carlos_vera.png",
+        "nationality": "us"
       },
       {
         "name": "Dr. en C. Francisco Guillermo Mendoza Hoffman",
@@ -212,7 +230,8 @@
         "hour_center": "18:00 - 19:00",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "francisco_guillermo_mendoza hoffman.jpeg"
+        "photo": "francisco_guillermo_mendoza hoffman.jpeg",
+        "nationality": "cn"
       }
     ],
     "Sala_3": [
@@ -225,7 +244,8 @@
         "hour_center": "13:15 - 14:10",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "xavier_filella_pla.jpeg"
+        "photo": "xavier_filella_pla.jpeg",
+        "nationality": "es"
       },
       {
         "name": "Master en Atención Farmacéutica Alberto Uribe Sánchez",
@@ -236,7 +256,8 @@
         "hour_center": "14:10 - 15:10",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "alberto_uribe_sanchez.jpeg"
+        "photo": "alberto_uribe_sanchez.jpeg",
+        "nationality": "es"
       },
       {
         "name": "",
@@ -247,7 +268,8 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -258,7 +280,8 @@
         "hour_center": "15:40 - 16:40",
         "pill":"Conferencia Magistral",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "damiano_buratto.jpg"
+        "photo": "damiano_buratto.jpg",
+        "nationality": "cn"
       },
       {
         "name": "",
@@ -269,7 +292,8 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. Adagmar Andriolo",
@@ -280,7 +304,8 @@
         "hour_center": "17:00 - 18:00",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "adagmar_andriolo.jpg"
+        "photo": "adagmar_andriolo.jpg",
+        "nationality": "br"
       },
       {
         "name": "QFB. Enrique Trejo Santana",
@@ -291,22 +316,24 @@
         "hour_center": "18:00 - 19:00",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "enrique_trejo_santana.png"
+        "photo": "enrique_trejo_santana.png",
+        "nationality": ""
       }
     ]
   },
   "Viernes_11_de_Noviembre": {
     "Sala_1": [
       {
-        "name": "RIFA PARA MADRUGADORES",
-        "theme": "",
+        "name": "",
+        "theme": "RIFA PARA MADRUGADORES",
         "grade": "",
         "university": "",
         "hour_tijuana": "8:00 - 8:15",
         "hour_center": "10:00 - 10:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. José de Jesús Alba Romero",
@@ -317,7 +344,8 @@
         "hour_center": "10:15 - 11:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "jose_de_jesus_alba_romero.png"
+        "photo": "jose_de_jesus_alba_romero.png",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Benjamín Nogueda Torres",
@@ -328,7 +356,8 @@
         "hour_center": "11:15 - 12:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "benjamin_nogueda_torres.png"
+        "photo": "benjamin_nogueda_torres.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -339,7 +368,8 @@
         "hour_center": "11:15 - 12:45",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Samuel Treviño Mora",
@@ -350,7 +380,8 @@
         "hour_center": "12:45 - 13:45",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "samuel_trevino_mora.png"
+        "photo": "samuel_trevino_mora.png",
+        "nationality": ""
       },
       {
         "name": "M. en C. Jezabel Vite Casanova",
@@ -361,7 +392,8 @@
         "hour_center": "13:45 - 14:45",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "maria_jezabel_vite_casanova.png"
+        "photo": "maria_jezabel_vite_casanova.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -372,7 +404,8 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Jesús Norberto Lozano Ruíz Esparza",
@@ -383,7 +416,8 @@
         "hour_center": "15:15 - 16:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "jesus_norberto_lozano_ruiz_esparza.png"
+        "photo": "jesus_norberto_lozano_ruiz_esparza.png",
+        "nationality": ""
       },
       {
         "name": "QFB. Ángeles Sánchez Martínez",
@@ -394,7 +428,8 @@
         "hour_center": "16:15 - 18:15",
         "pill": "Coordinador",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
-        "photo": "angeles_sanchez_martinez.jpeg"
+        "photo": "angeles_sanchez_martinez.jpeg",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Gustavo Adolfo Penacino",
@@ -405,7 +440,8 @@
         "hour_center": "16:15 - 17:15",
         "pill": "",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
-        "photo": "gustavo_penacino.jpeg"
+        "photo": "gustavo_penacino.jpeg",
+        "nationality": "ar"
       },
       {
         "name": "cDra. en C. Ixchel de la Luz Martínez",
@@ -416,20 +452,22 @@
         "hour_center": "17:15 - 18:15",
         "pill": "",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
-        "photo": "ixchel_de_la_luz_martinez.jpeg"
+        "photo": "ixchel_de_la_luz_martinez.jpeg",
+        "nationality": ""
       }
     ],
     "Sala_2": [
       {
-        "name": "RIFA PARA MADRUGADORES",
-        "theme": "",
+        "name": "",
+        "theme": "RIFA PARA MADRUGADORES",
         "grade": "",
         "university": "",
         "hour_tijuana": "8:00 - 8:15",
         "hour_center": "10:00 - 10:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Jorge Hernández Bello",
@@ -440,7 +478,8 @@
         "hour_center": "10:15 - 11:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "jorge_hernandez.jpeg"
+        "photo": "jorge_hernandez.jpeg",
+        "nationality": ""
       },
       {
         "name": "QC. Carlos Virgen Cruz",
@@ -451,7 +490,8 @@
         "hour_center": "11:15 - 12:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "carlos_virgen_cruz.png"
+        "photo": "carlos_virgen_cruz.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -462,7 +502,8 @@
         "hour_center": "11:15 - 12:45",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "MD, MPH Rafael Laniado Laborín",
@@ -473,7 +514,8 @@
         "hour_center": "12:45 - 13:45",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "laniado_y_hermelinda_de_la_cruz.jpeg"
+        "photo": "laniado_y_hermelinda_de_la_cruz.jpeg",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Carla Santana Torres",
@@ -484,7 +526,8 @@
         "hour_center": "13:45 - 14:45",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "carla_santana_torres.png"
+        "photo": "carla_santana_torres.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -495,7 +538,8 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "M. en A. Pilar del Carmen Hernández Rodríguez",
@@ -506,7 +550,8 @@
         "hour_center": "15:15 - 16:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "pilar_del_carmen_hernandez_rodriguez.png"
+        "photo": "pilar_del_carmen_hernandez_rodriguez.png",
+        "nationality": ""
       },
       {
         "name": "QFB. José Antonio Duarte García",
@@ -517,7 +562,8 @@
         "hour_center": "16:15 - 17:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "jose_antonio_duarte_garcia.jpeg"
+        "photo": "jose_antonio_duarte_garcia.jpeg",
+        "nationality": ""
       },
       {
         "name": "M. en C. Hermelinda de la Cruz Durán",
@@ -528,20 +574,22 @@
         "hour_center": "17:15 - 18:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "hermelinda_de_la_cruz.jpeg"
+        "photo": "hermelinda_de_la_cruz.jpeg",
+        "nationality": ""
       }
     ],
     "Sala_3": [
       {
-        "name": "RIFA PARA MADRUGADORES",
-        "theme": "",
+        "name": "",
+        "theme": "RIFA PARA MADRUGADORES",
         "grade": "",
         "university": "",
         "hour_tijuana": "8:00 - 8:15",
         "hour_center": "10:00 - 10:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "M. en C. José Ángel Francisco Flores Hernández",
@@ -552,7 +600,8 @@
         "hour_center": "10:15 - 11:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "angel_francisco_flores_hernandez.png"
+        "photo": "angel_francisco_flores_hernandez.png",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Yesenia Danyeli Navarro González",
@@ -563,7 +612,8 @@
         "hour_center": "11:15 - 12:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "yesenia_danyeli_navarro_gonzalez.jpeg"
+        "photo": "yesenia_danyeli_navarro_gonzalez.jpeg",
+        "nationality": ""
       },
       {
         "name": "",
@@ -574,7 +624,8 @@
         "hour_center": "11:15 - 12:55",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Cynthia Guadalupe Ramírez Farías",
@@ -585,7 +636,8 @@
         "hour_center": "12:45 - 13:45",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "cynthia_guadalupe_ramirez_farias.png"
+        "photo": "cynthia_guadalupe_ramirez_farias.png",
+        "nationality": ""
       },
       {
         "name": "Dra. en C. Mirna Brito Perea",
@@ -596,7 +648,8 @@
         "hour_center": "13:45 - 14:45",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "mirna_brito.jpeg"
+        "photo": "mirna_brito.jpeg",
+        "nationality": ""
       },
       {
         "name": "",
@@ -607,7 +660,8 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       },
       {
         "name": "Dr. en C. Carlos Cortés Penagos",
@@ -618,7 +672,8 @@
         "hour_center": "15:15 - 16:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "carlos_cortes_penagos.png"
+        "photo": "carlos_cortes_penagos.png",
+        "nationality": ""
       },
       {
         "name": "Dra. Leslie Patrón Romero",
@@ -629,7 +684,8 @@
         "hour_center": "16:15 - 17:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "leslie_patron.jpeg"
+        "photo": "leslie_patron.jpeg",
+        "nationality": ""
       },
       {
         "name": "MSP. Armando Rodríguez Rodríguez",
@@ -640,7 +696,8 @@
         "hour_center": "17:15 - 18:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "armando_rodriguez_rodriguez.png"
+        "photo": "armando_rodriguez_rodriguez.png",
+        "nationality": ""
       }
     ]
   },
@@ -655,7 +712,8 @@
         "hour_center": "16:30 - 17:30",
         "pill": "Conferencia Magistral",
         "modalidad": "",
-        "photo": "graciela_castro_escarpulli.png"
+        "photo": "graciela_castro_escarpulli.png",
+        "nationality": ""
       },
       {
         "name": "",
@@ -666,7 +724,8 @@
         "hour_center": "17:30 - 18:00",
         "pill": "",
         "modalidad": "",
-        "photo": ""
+        "photo": "",
+        "nationality": ""
       }
     ],
     "courses": [
@@ -675,7 +734,9 @@
         "participants": [
           {
             "name": "EHDL. Alejandro Martínez Sánchez",
-            "grade": "Laboratorio LABDIC"
+            "grade": "Laboratorio LABDIC",
+            "photo": "alejandro_martinez_sanchez.jpeg",
+            "nationality": ""
           }
         ],
         "place": "LABORATORIO A",
@@ -690,11 +751,15 @@
         "participants": [
           {
             "name": "cDra. en C. Ixchel de la Luz Martínez",
-            "grade": "Sociedad Latinoamericana de Genética Forense México"
+            "grade": "Sociedad Latinoamericana de Genética Forense México",
+            "photo": "ixchel_de_la_luz_martinez.jpeg",
+            "nationality": ""
           },
           {
             "name": "Dr. en C. Gustavo Adolfo Penacino",
-            "grade": "Sociedad Latinoamericana de Genética Forense Argentina"
+            "grade": "Sociedad Latinoamericana de Genética Forense Argentina",
+            "photo": "gustavo_penacino.jpeg",
+            "nationality": ""
           }
         ],
         "place": "LABORATORIO A",
@@ -709,11 +774,15 @@
         "participants": [
           {
             "name": "MBA. Gisela Cortés Rivera | LICON",
-            "grade": "BUENAS PRÁCTICAS EN LA REALIZACIÓN DE GRÁFICOS DE CONTROL ESTADÍSTICOS DE LA CALIDAD"
+            "grade": "BUENAS PRÁCTICAS EN LA REALIZACIÓN DE GRÁFICOS DE CONTROL ESTADÍSTICOS DE LA CALIDAD",
+            "photo": "gisela_ortes_rivera.jpg",
+            "nationality": ""
           },
           {
             "name": "QC. Carlos Virgen Cruz | LICON",
-            "grade": "INTERPRETACIÓN DE LOS TIEMPOS DE COAGULACIÓN Y UTILIDAD CLÍNICA"
+            "grade": "INTERPRETACIÓN DE LOS TIEMPOS DE COAGULACIÓN Y UTILIDAD CLÍNICA",
+            "photo": "carlos_virgen_cruz.png",
+            "nationality": ""
           }
         ],
         "place": "LABORATORIO A",
@@ -728,7 +797,9 @@
         "participants": [
           {
             "name": "Dra. en C. Idanya Rubí Serafín Higuera",
-            "grade": "Centro COVID | Universidad Autónoma de Baja California"
+            "grade": "Centro COVID | Universidad Autónoma de Baja California",
+            "photo": "idanya_rubi_serafin_higuera.jpg",
+            "nationality": ""
           }
         ],
         "place": "CENTRO COVID",
@@ -743,7 +814,9 @@
         "participants": [
           {
             "name": "Dr. en C. José de Jesús Alba Romero",
-            "grade": "Universidad Autónoma de Durango"
+            "grade": "Universidad Autónoma de Durango",
+            "photo": "jose_de_jesus_alba_romero.png",
+            "nationality": ""
           }
         ],
         "place": "LABORATORIO B",
@@ -758,7 +831,9 @@
         "participants": [
           {
             "name": "Dr. en C. Benjamín Nogueda Torres",
-            "grade": "Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional"
+            "grade": "Escuela Nacional de Ciencias Biológicas, Instituto Politécnico Nacional",
+            "photo": "benjamin_nogueda_torres.png",
+            "nationality": ""
           }
         ],
         "place": "SALE DE CONFERENCIAS",
@@ -773,7 +848,9 @@
         "participants": [
           {
             "name": "M. en C. José Ángel Francisco Flores Hernández",
-            "grade": "Benemérita Universidad Autónoma de Puebla"
+            "grade": "Benemérita Universidad Autónoma de Puebla",
+            "photo": "angel_francisco_flores_hernandez.png",
+            "nationality": ""
           }
         ],
         "place": "AULA 1",
@@ -788,7 +865,9 @@
         "participants": [
           {
             "name": "M. en C. Miguel Ruiz Jiménez",
-            "grade": "Asesor Laboratorio Clínico I Puebla, Pue."
+            "grade": "Asesor Laboratorio Clínico I Puebla, Pue.",
+            "photo": "miguel_ruiz_jimenez.png",
+            "nationality": ""
           }
         ],
         "place": "AULA 2",
@@ -803,7 +882,9 @@
         "participants": [
           {
             "name": "Dr. en C. Samuel Treviño Mora",
-            "grade": "Benemérita Universidad Autónoma de Puebla"
+            "grade": "Benemérita Universidad Autónoma de Puebla",
+            "photo": "samuel_trevino_mora.png",
+            "nationality": ""
           }
         ],
         "place": "AULA 3",
@@ -818,11 +899,15 @@
         "participants": [
           {
             "name": "M. en C. Christian Alejandra Escobedo Barroso",
-            "grade": "Consultora Clínica en Fase Preanalítica"
+            "grade": "Consultora Clínica en Fase Preanalítica",
+            "photo": "christian_alejandra_escobedo_barroso.jpeg",
+            "nationality": ""
           },
           {
             "name": "Bioq. Oscar Hernández Sepúlveda",
-            "grade": "Especialista de Aplicaciones en Microbiología Becton Dickinson"
+            "grade": "Especialista de Aplicaciones en Microbiología Becton Dickinson",
+            "photo": "oscar_hernandez_sepulveda.jpeg",
+            "nationality": ""
           }
         ],
         "place": "AULA 4",
@@ -837,7 +922,9 @@
         "participants": [
           {
             "name": "QFB. Luis Ismael Rios Montoya",
-            "grade": "Banco de sangre y hemoderivados, S.C."
+            "grade": "Banco de sangre y hemoderivados, S.C.",
+            "photo": "luis_ismael_rios_montoya.png",
+            "nationality": ""
           }
         ],
         "place": "AULA 5",
@@ -852,15 +939,21 @@
         "participants": [
           {
             "name": "Dr. en C. Elías Miranda González | CC-Lab",
-            "grade": "COSTOS DE LA NO CALIDAD EN EL LABORATORIO CLÍNICO"
+            "grade": "COSTOS DE LA NO CALIDAD EN EL LABORATORIO CLÍNICO",
+            "photo": "elias_miranda_gonzalez.png",
+            "nationality": ""
           },
           {
             "name": "QBP. Víctor Baltazar Escobar | VICBAL Consultoría",
-            "grade": "VERIFICACIÓN DE LA PRECISIÓN, VERACIDAD Y LÍNEALIDAD PARA EL CUMPLIENTO DE LA NOM-007-SSA3-2011"
+            "grade": "VERIFICACIÓN DE LA PRECISIÓN, VERACIDAD Y LÍNEALIDAD PARA EL CUMPLIENTO DE LA NOM-007-SSA3-2011",
+            "photo": "victor_baltazar_escobar.png",
+            "nationality": ""
           },
           {
             "name": "QBP. Víctor Baltazar Escobar | VICBAL Consultoría",
-            "grade": "LA MÉTRICA SIGMA Y LA SELECCIÓN DE REGLAS DE CONTROL"
+            "grade": "LA MÉTRICA SIGMA Y LA SELECCIÓN DE REGLAS DE CONTROL",
+            "photo": "victor_baltazar_escobar.png",
+            "nationality": ""
           }
         ],
         "place": "CENTRO DE CÓMPUTO",
@@ -875,7 +968,9 @@
         "participants": [
           {
             "name": "PhD. Adriana Sujey Beltrán López",
-            "grade": "University of North Carolina at Chapel Hill School or Medicine, United States of America"
+            "grade": "University of North Carolina at Chapel Hill School or Medicine, United States of America",
+            "photo": "adriana_beltran_lopez.jpeg",
+            "nationality": "us"
           }
         ],
         "place": "AULA 1",

@@ -615,21 +615,18 @@ function generateDefaultsOptions(events) {
 function generateCoursesOptions(events) {
 	const courses_content = $('#courses')
 	events.forEach((element, index) => {
-		const { hour_center, hour_tijuana, modalidad, participants, photo, pill, place, theme } = element
+		const { hour_center, hour_tijuana, participants, photo, pill, place, theme } = element
 		courses_content.append(`<div class="event-block">
 			<div class="inner-box">
 				<div class="row clearfix">
 					<div class="image-column col-lg-5 col-sm-12 col-md-12">
 						<div class="inner-column">
-							<div class="image">
-								<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
-								<div class="overlay-box">
-									<div class="overlay-inner">
-										<div class="content">
-											<h3><a href="javascript:void(0)">CURSO ${index + 1}</a></h3>
-										</div>
-									</div>
-								</div>
+							<div class="image shadow">
+							${
+								participants.length > 1
+									? generateCarousel(participants)
+									: generateNormalImage(photo, index)
+								}
 							</div>
 							<div class="event-time">
 								<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
@@ -643,10 +640,14 @@ function generateCoursesOptions(events) {
 					<div class="info-column col-lg-7 col-sm-12 col-md-12">
 						<div class="inner-column">
 							${participants.map(participant => {
-								return `<div class="name">${participant.name}</div>`
+								return `<div class="name">
+									${participant.name}
+									${participant.nationality !== '' ? `<i class="${participant.nationality} flag ml-2"></i>` : ''}
+								</div>`
 							}).join('')}
 							<h2><a href="javascript:void(0)">${theme}</a></h2>
-							<div class="text">${place}</div>
+							<div class="text"><span class="font-weight-bold">CURSO ${index + 1}</span> - ${place}</div>
+							<div class="badge badge-danger p-2 mt-2">${pill}</div>
 						</div>
 					</div>
 				</div>
@@ -656,21 +657,14 @@ function generateCoursesOptions(events) {
 }
 
 function templateContent(event) {
-	const { grade, hour_center, hour_tijuana, modalidad, name, photo, pill, theme } = event
+	const { grade, hour_center, hour_tijuana, name, nationality, photo, pill, theme } = event
 	return `<div class="event-block">
 		<div class="inner-box">
 			<div class="row clearfix">
 				<div class="image-column col-lg-5 col-sm-12 col-md-12">
 					<div class="inner-column">
-						<div class="image">
-							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/event-1.jpg'}" alt="" />
-							<div class="overlay-box">
-								<div class="overlay-inner">
-									<div class="content">
-										<h3><a href="javascript:void(0)">${pill !== '' ? pill : `Evento`}</a></h3>
-									</div>
-								</div>
-							</div>
+						<div class="image shadow">
+							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
 						</div>
 						<div class="event-time">
 							<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
@@ -680,12 +674,41 @@ function templateContent(event) {
 				</div>
 				<div class="info-column col-lg-7 col-sm-12 col-md-12">
 					<div class="inner-column">
-						<div class="name">${name}</div>
+						<div class="name">
+							${name}
+							${nationality !== '' ? `<i class="${nationality} flag ml-2"></i>` : ''}
+						</div>
 						<h2><a href="javascript:void(0)">${theme}</a></h2>
 						<div class="text">${grade}</div>
+						<div class="badge badge-danger p-2 mt-2">${pill}</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>`
+}
+
+function generateNormalImage(photo, index) {
+	return `<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />`
+}
+
+function generateCarousel(speakers) {
+	const randomId = Math.floor(Math.random() * (1000 + 1))
+	return `<div id="${`carousel${randomId}`}" class="carousel slide" data-ride="carousel">
+		<div class="carousel-inner">
+			${speakers.map((speaker, index) => {
+				return `<div class="carousel-item ${ index === 0 ? 'active' : ''}">
+				<img class="d-block w-100 image-carousel" src="assets/img/speakers/${speaker.photo}" alt="${speaker.name}">
+			</div>`
+			}).join('')}
+		</div>
+		<a class="carousel-control-prev" href="#${`carousel${randomId}`}" role="button" data-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="carousel-control-next" href="#${`carousel${randomId}`}" role="button" data-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="sr-only">Next</span>
+		</a>
 	</div>`
 }
