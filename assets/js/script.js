@@ -29,7 +29,7 @@
 	}
 
 	function loadSelects() {
-		$.ajax('/assets/json/conference.json', {
+		$.ajax('https://jhonatanhzb.github.io/conference-conquilab/assets/json/conference.json', {
 			dataType: 'json',
 			timeout: 500,
 			success: function (data) {
