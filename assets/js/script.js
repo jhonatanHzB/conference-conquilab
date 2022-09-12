@@ -637,7 +637,7 @@ function generateCoursesOptions(events) {
 							</div>
 						</div>
 					</div>
-					<div class="info-column col-lg-7 col-sm-12 col-md-12">
+					<div class="info-column col-lg-7 col-sm-12 col-md-12 px-md-5">
 						<div class="inner-column">
 							${participants.map(participant => {
 								return `<div class="name">
@@ -691,7 +691,7 @@ function templateContent(event) {
 						</div>
 					</div>
 				</div>
-				<div class="info-column col-lg-7 col-sm-12 col-md-12">
+				<div class="info-column col-lg-7 col-sm-12 col-md-12 px-md-5">
 					<div class="inner-column">
 						<div class="name">${name}</div>
 						<h2><a href="javascript:void(0)">${theme}</a></h2>
