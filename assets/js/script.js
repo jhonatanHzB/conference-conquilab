@@ -621,11 +621,11 @@ function generateCoursesOptions(events) {
 				<div class="row clearfix">
 					<div class="image-column col-lg-5 col-sm-12 col-md-12">
 						<div class="inner-column">
-							<div class="image shadow">
+							<div class="image">
 							${
 								participants.length > 1
-									? generateCarousel(participants)
-									: generateNormalImage(photo, index)
+									? generateCarousel(participants, pill)
+									: generateNormalImage(photo, pill)
 								}
 							</div>
 							<div class="event-time">
@@ -647,13 +647,24 @@ function generateCoursesOptions(events) {
 							}).join('')}
 							<h2><a href="javascript:void(0)">${theme}</a></h2>
 							<div class="text"><span class="font-weight-bold">CURSO ${index + 1}</span> - ${place}</div>
-							<div class="badge badge-danger p-2 mt-2">${pill}</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>`)
 	})
+}
+
+function getFlag(nationality) {
+	const flags = {
+		ca: 'canada.png',
+		us: 'estados-unidos.png',
+		cn: 'china.png',
+		es: 'espana.png',
+		br: 'brasil.png',
+		ar: 'argentina.png'
+	}
+	return flags[nationality] ?? 'mexico.png'
 }
 
 function templateContent(event) {
@@ -663,24 +674,28 @@ function templateContent(event) {
 			<div class="row clearfix">
 				<div class="image-column col-lg-5 col-sm-12 col-md-12">
 					<div class="inner-column">
-						<div class="image shadow">
+						<div class="image">
 							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
+							${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
+							<div class="overlay-box">
+								<div class="overlay-inner">
+									<div class="content">
+										<img src="assets/img/nationalities/${getFlag(nationality)}" />
+									</div>
+								</div>
+							</div>
 						</div>
 						<div class="event-time">
-							<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
-							<small class="text-muted">Hora Local Centro</small><br> ${hour_center}
+							<small class="text-muted">HORA LOCAL DE TIJUANA</small><br> ${hour_tijuana} <br>
+							<small class="text-muted">HORA CENTRO DE MÉXICO</small><br> ${hour_center}
 						</div>
 					</div>
 				</div>
 				<div class="info-column col-lg-7 col-sm-12 col-md-12">
 					<div class="inner-column">
-						<div class="name">
-							${name}
-							${nationality !== '' ? `<i class="${nationality} flag ml-2"></i>` : ''}
-						</div>
+						<div class="name">${name}</div>
 						<h2><a href="javascript:void(0)">${theme}</a></h2>
 						<div class="text">${grade}</div>
-						<div class="badge badge-danger p-2 mt-2">${pill}</div>
 					</div>
 				</div>
 			</div>
@@ -688,17 +703,26 @@ function templateContent(event) {
 	</div>`
 }
 
-function generateNormalImage(photo, index) {
-	return `<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />`
+function generateNormalImage(photo, pill) {
+	return `<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
+	${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
+	<div class="overlay-box">
+		<div class="overlay-inner">
+			<div class="content">
+				<img src="assets/img/nationalities/${getFlag('')}" />
+			</div>
+		</div>
+	</div>`
 }
 
-function generateCarousel(speakers) {
+function generateCarousel(speakers, pill) {
 	const randomId = Math.floor(Math.random() * (1000 + 1))
 	return `<div id="${`carousel${randomId}`}" class="carousel slide" data-ride="carousel">
 		<div class="carousel-inner">
 			${speakers.map((speaker, index) => {
 				return `<div class="carousel-item ${ index === 0 ? 'active' : ''}">
 				<img class="d-block w-100 image-carousel" src="assets/img/speakers/${speaker.photo}" alt="${speaker.name}">
+				${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
 			</div>`
 			}).join('')}
 		</div>

@@ -1,10 +1,25 @@
 .speaker-image {
-	max-width: 250px;
+	max-width: 132px;
 	max-height: 170px
 }
 
+.pill-congress {
+	background-image: linear-gradient(310deg,#ca28b6,#ff0000c7);
+	box-shadow: 0 4px 7px -1px rgb(0 0 0 / 11%), 0 2px 4px -1px rgb(0 0 0 / 7%);
+	background-size: 150%;
+  background-position-x: 25%;
+  letter-spacing: -.025rem;
+  max-width: 135px;
+  font-size: 12px;
+  color: white;
+  border-radius: 1.875rem;
+  margin-top: -1rem;
+  z-indez: 2;
+  position: relative;
+}
+
 .image-carousel {
-	max-width: 144px;
+	max-width: 132px;
 	max-height: 168px;
 }
 
@@ -1137,7 +1152,7 @@
 @media only screen and (max-width: 479px) {
 
 	.speaker-image {
-		max-width: 185px;
+		max-width: 125px;
 		max-height: 170px;
 	}
 

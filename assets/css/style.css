@@ -2787,6 +2787,7 @@ img {
 	position: relative;
 	display: table-cell;
 	vertical-align: middle;
+	padding: 0 15px;
 }
 
 .event-block .overlay-inner .content h3 {
