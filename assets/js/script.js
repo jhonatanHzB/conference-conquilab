@@ -553,6 +553,11 @@
 
 })(window.jQuery);
 
+var isMobile = false
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+	isMobile = true
+}
+
 function tabs() {
 		if($('.tabs-box').length) {
 		$('.tabs-box .tab-buttons .tab-btn').on('click', function(e) {
@@ -668,8 +673,9 @@ function getFlag(nationality) {
 }
 
 function templateContent(event) {
-	const { grade, hour_center, hour_tijuana, name, nationality, photo, pill, theme } = event
-	return `<div class="event-block">
+	const { grade, hour_center, hour_tijuana, name, nationality, photo, pill, simposium, theme } = event
+	return `${simposium !== '' ? `<p class="text-center h3 my-2 text-warning" style="background: blanchedalmond">${simposium}</p>` : ''}
+	<div class="event-block">
 		<div class="inner-box">
 			<div class="row clearfix">
 				<div class="image-column col-lg-5 col-sm-12 col-md-12">
@@ -677,14 +683,19 @@ function templateContent(event) {
 						<div class="image">
 							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
 							${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
-							<div class="overlay-box">
+							${!isMobile ? `<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<img src="assets/img/nationalities/${getFlag(nationality)}" />
 									</div>
 								</div>
-							</div>
+							</div>` : ''}
 						</div>
+						${
+							theme.search('CEREMONIA') === -1 && theme.search('EXPO') === -1 && isMobile
+							? `<img class="image-flag-mobile" src="assets/img/nationalities/${getFlag(nationality)}" alt="" />`
+							: ''
+						}
 						<div class="event-time">
 							<small class="text-muted">HORA LOCAL DE TIJUANA</small><br> ${hour_tijuana} <br>
 							<small class="text-muted">HORA CENTRO DE MÉXICO</small><br> ${hour_center}
@@ -706,13 +717,13 @@ function templateContent(event) {
 function generateNormalImage(photo, pill) {
 	return `<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
 	${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
-	<div class="overlay-box">
+	${!isMobile ? `<div class="overlay-box">
 		<div class="overlay-inner">
 			<div class="content">
 				<img src="assets/img/nationalities/${getFlag('')}" />
 			</div>
 		</div>
-	</div>`
+	</div>` : ''}`
 }
 
 function generateCarousel(speakers, pill) {

@@ -11,7 +11,8 @@
         "pill": "Conferencia Magistral",
         "modalidad": "",
         "photo": "linda_lara_jacobo.jpeg",
-        "nationality": "ca"
+        "nationality": "ca",
+        "simposium": ""
       },
       {
         "name": "",
@@ -22,8 +23,9 @@
         "hour_center": "12:00 - 12:45",
         "pill": "",
         "modalidad": "",
-        "photo": "",
-        "nationality": ""
+        "photo": "inaguracion.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -34,8 +36,9 @@
         "hour_center": "12:45 - 13:15",
         "pill": "",
         "modalidad": "",
-        "photo": "",
-        "nationality": ""
+        "photo": "inaguracion.jpg",
+        "nationality": "",
+        "simposium": ""
       }
     ],
     "Sala_1": [
@@ -49,7 +52,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "alejandro_martinez_sanchez.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "PhD. Adriana Sujey Beltrán López",
@@ -61,7 +65,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "adriana_beltran_lopez.jpeg",
-        "nationality": "us"
+        "nationality": "us",
+        "simposium": ""
       },
       {
         "name": "",
@@ -72,8 +77,9 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -85,7 +91,8 @@
         "pill":"Conferencia Magistral",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "damiano_buratto.jpg",
-        "nationality": "cn"
+        "nationality": "cn",
+        "simposium": ""
       },
       {
         "name": "",
@@ -96,8 +103,9 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Mirna Brito Perea",
@@ -109,7 +117,8 @@
         "pill": "Coordinador",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
         "photo": "mirna_brito.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": "SIMPOSIUM BACTERIOLOGÍA"
       },
       {
         "name": "Dr. en C. Luis Esaú López Jácome",
@@ -121,7 +130,8 @@
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
         "photo": "luis_esau_lopez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Silvia Giono Cerezo",
@@ -133,7 +143,8 @@
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
         "photo": "silvia_giono_cerezo.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "M. en C. Miguel Ruiz Jiménez",
@@ -145,7 +156,8 @@
         "pill": "",
         "modalidad": "SIMPOSIUM BACTERIOLOGÍA",
         "photo": "miguel_ruiz_jimenez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ],
     "Sala_2": [
@@ -159,7 +171,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "elias_miranda_gonzalez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "QBP. Víctor Baltazar Escobar",
@@ -171,7 +184,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "victor_baltazar_escobar.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -182,8 +196,9 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -195,7 +210,8 @@
         "pill":"Conferencia Magistral",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "damiano_buratto.jpg",
-        "nationality": "cn"
+        "nationality": "cn",
+        "simposium": ""
       },
       {
         "name": "",
@@ -206,8 +222,9 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. Carlos Vera Hernández",
@@ -219,7 +236,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "carlos_vera.png",
-        "nationality": "us"
+        "nationality": "us",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Francisco Guillermo Mendoza Hoffman",
@@ -231,7 +249,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "francisco_guillermo_mendoza hoffman.jpeg",
-        "nationality": "cn"
+        "nationality": "cn",
+        "simposium": ""
       }
     ],
     "Sala_3": [
@@ -245,7 +264,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "xavier_filella_pla.jpeg",
-        "nationality": "es"
+        "nationality": "es",
+        "simposium": ""
       },
       {
         "name": "Master en Atención Farmacéutica Alberto Uribe Sánchez",
@@ -257,7 +277,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "alberto_uribe_sanchez.jpeg",
-        "nationality": "es"
+        "nationality": "es",
+        "simposium": ""
       },
       {
         "name": "",
@@ -268,8 +289,9 @@
         "hour_center": "15:10 - 15:40",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "PhD. Damiano Buratto",
@@ -281,7 +303,8 @@
         "pill":"Conferencia Magistral",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "damiano_buratto.jpg",
-        "nationality": "cn"
+        "nationality": "cn",
+        "simposium": ""
       },
       {
         "name": "",
@@ -292,8 +315,9 @@
         "hour_center": "16:40 - 17:00",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. Adagmar Andriolo",
@@ -305,7 +329,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "adagmar_andriolo.jpg",
-        "nationality": "br"
+        "nationality": "br",
+        "simposium": ""
       },
       {
         "name": "QFB. Enrique Trejo Santana",
@@ -317,7 +342,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "enrique_trejo_santana.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ]
   },
@@ -333,7 +359,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. José de Jesús Alba Romero",
@@ -345,7 +372,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "jose_de_jesus_alba_romero.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Benjamín Nogueda Torres",
@@ -357,7 +385,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "benjamin_nogueda_torres.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -368,8 +397,9 @@
         "hour_center": "11:15 - 12:45",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Samuel Treviño Mora",
@@ -381,7 +411,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "samuel_trevino_mora.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "M. en C. Jezabel Vite Casanova",
@@ -393,7 +424,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "maria_jezabel_vite_casanova.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -404,8 +436,9 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Jesús Norberto Lozano Ruíz Esparza",
@@ -417,7 +450,8 @@
         "pill": "",
         "modalidad": "PRESENCIAL Y EN LÍNEA",
         "photo": "jesus_norberto_lozano_ruiz_esparza.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "QFB. Ángeles Sánchez Martínez",
@@ -429,7 +463,8 @@
         "pill": "Coordinador",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
         "photo": "angeles_sanchez_martinez.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": "SIMPOSIUM: GENÉTICA FORENSE"
       },
       {
         "name": "Dr. en C. Gustavo Adolfo Penacino",
@@ -441,7 +476,8 @@
         "pill": "",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
         "photo": "gustavo_penacino.jpeg",
-        "nationality": "ar"
+        "nationality": "ar",
+        "simposium": ""
       },
       {
         "name": "cDra. en C. Ixchel de la Luz Martínez",
@@ -453,7 +489,8 @@
         "pill": "",
         "modalidad": "SIMPOSIUM: GENÉTICA FORENSE",
         "photo": "ixchel_de_la_luz_martinez.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ],
     "Sala_2": [
@@ -467,7 +504,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Jorge Hernández Bello",
@@ -479,7 +517,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "jorge_hernandez.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "QC. Carlos Virgen Cruz",
@@ -491,7 +530,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "carlos_virgen_cruz.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -502,8 +542,9 @@
         "hour_center": "11:15 - 12:45",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "MD, MPH Rafael Laniado Laborín",
@@ -515,7 +556,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "laniado_y_hermelinda_de_la_cruz.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Carla Santana Torres",
@@ -527,7 +569,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "carla_santana_torres.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -538,8 +581,9 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "M. en A. Pilar del Carmen Hernández Rodríguez",
@@ -551,7 +595,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "pilar_del_carmen_hernandez_rodriguez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "QFB. José Antonio Duarte García ",
@@ -563,7 +608,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "jose_antonio_duarte_garcia.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "M. en C. Hermelinda de la Cruz Durán",
@@ -575,7 +621,8 @@
         "pill": "",
         "modalidad": "SOLO PRESENCIAL",
         "photo": "hermelinda_de_la_cruz.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ],
     "Sala_3": [
@@ -589,7 +636,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "M. en C. José Ángel Francisco Flores Hernández",
@@ -601,7 +649,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "angel_francisco_flores_hernandez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Yesenia Danyeli Navarro González",
@@ -613,7 +662,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "yesenia_danyeli_navarro_gonzalez.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -624,8 +674,9 @@
         "hour_center": "11:15 - 12:55",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Cynthia Guadalupe Ramírez Farías",
@@ -637,7 +688,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "cynthia_guadalupe_ramirez_farias.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. en C. Mirna del Carmen Brito Perea",
@@ -649,7 +701,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "mirna_brito.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -660,8 +713,9 @@
         "hour_center": "14:45 - 15:15",
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
-        "photo": "",
-        "nationality": ""
+        "photo": "expoinnovaciontecnologica.jpg",
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dr. en C. Carlos Cortés Penagos",
@@ -673,7 +727,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "carlos_cortes_penagos.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "Dra. Leslie Patrón Romero",
@@ -685,7 +740,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "leslie_patron.jpeg",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "MSP. Armando Rodríguez Rodríguez",
@@ -697,7 +753,8 @@
         "pill": "",
         "modalidad": "SOLO EN LÍNEA",
         "photo": "armando_rodriguez_rodriguez.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ]
   },
@@ -713,7 +770,8 @@
         "pill": "Conferencia Magistral",
         "modalidad": "",
         "photo": "graciela_castro_escarpulli.png",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       },
       {
         "name": "",
@@ -725,7 +783,8 @@
         "pill": "",
         "modalidad": "",
         "photo": "",
-        "nationality": ""
+        "nationality": "",
+        "simposium": ""
       }
     ],
     "courses": [

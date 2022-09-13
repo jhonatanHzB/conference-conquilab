@@ -14,13 +14,19 @@
   color: white;
   border-radius: 1.875rem;
   margin-top: -1rem;
-  z-indez: 2;
   position: relative;
 }
 
 .image-carousel {
 	max-width: 132px;
 	max-height: 168px;
+}
+
+.image-flag-mobile {
+	position: absolute;
+	max-width: 50px;
+	top: 0.5rem;
+	left: calc(100% - 68%);
 }
 
 @media only screen and (max-width: 5000px) {
