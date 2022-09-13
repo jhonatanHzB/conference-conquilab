@@ -617,6 +617,18 @@ function generateDefaultsOptions(events) {
 	})
 }
 
+function getFlag(nationality) {
+	const flags = {
+		ca: 'canada.png',
+		us: 'estados-unidos.png',
+		cn: 'china.png',
+		es: 'espana.png',
+		br: 'brasil.png',
+		ar: 'argentina.png'
+	}
+	return flags[nationality] ?? 'mexico.png'
+}
+
 function generateCoursesOptions(events) {
 	const courses_content = $('#courses')
 	events.forEach((element, index) => {
@@ -633,6 +645,13 @@ function generateCoursesOptions(events) {
 									: generateNormalImage(photo, pill)
 								}
 							</div>
+							${
+								participants.length === 1 ? `${
+									theme.search('CEREMONIA') === -1 && theme.search('EXPO') === -1 && isMobile
+									? `<img class="image-flag-mobile" src="assets/img/nationalities/${getFlag(participants[0].nationality)}" alt="" />`
+									: ''
+								}`: ''
+							}
 							<div class="event-time">
 								<small class="text-muted">Hora Local Tijuana</small><br> ${hour_tijuana} <br>
 								${ hour_center !== ''
@@ -644,12 +663,7 @@ function generateCoursesOptions(events) {
 					</div>
 					<div class="info-column col-lg-7 col-sm-12 col-md-12 px-md-5">
 						<div class="inner-column">
-							${participants.map(participant => {
-								return `<div class="name">
-									${participant.name}
-									${participant.nationality !== '' ? `<i class="${participant.nationality} flag ml-2"></i>` : ''}
-								</div>`
-							}).join('')}
+							${participants.map(participant => `<div class="name">${participant.name}</div>`).join('')}
 							<h2><a href="javascript:void(0)">${theme}</a></h2>
 							<div class="text"><span class="font-weight-bold">CURSO ${index + 1}</span> - ${place}</div>
 						</div>
@@ -658,18 +672,6 @@ function generateCoursesOptions(events) {
 			</div>
 		</div>`)
 	})
-}
-
-function getFlag(nationality) {
-	const flags = {
-		ca: 'canada.png',
-		us: 'estados-unidos.png',
-		cn: 'china.png',
-		es: 'espana.png',
-		br: 'brasil.png',
-		ar: 'argentina.png'
-	}
-	return flags[nationality] ?? 'mexico.png'
 }
 
 function templateContent(event) {
