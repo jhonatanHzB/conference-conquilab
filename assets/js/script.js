@@ -642,7 +642,7 @@ function generateCoursesOptions(events) {
 							${
 								participants.length > 1
 									? generateCarousel(participants, pill)
-									: generateNormalImage(photo, pill)
+									: generateNormalImage(participants[0], theme, pill)
 								}
 							</div>
 							${
@@ -685,7 +685,7 @@ function templateContent(event) {
 						<div class="image">
 							<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
 							${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
-							${!isMobile ? `<div class="overlay-box">
+							${theme.search('CEREMONIA') === -1 && theme.search('EXPO') === -1 && !isMobile ? `<div class="overlay-box">
 								<div class="overlay-inner">
 									<div class="content">
 										<img src="assets/img/nationalities/${getFlag(nationality)}" />
@@ -716,13 +716,14 @@ function templateContent(event) {
 	</div>`
 }
 
-function generateNormalImage(photo, pill) {
+function generateNormalImage(participant, theme, pill) {
+	const { photo, nationality } = participant
 	return `<img class="speaker-image" src="${photo !== '' ? `assets/img/speakers/${photo}` : 'assets/img/resources/inventor-1.jpg'}" alt="" />
 	${pill !== '' ? `<div class="pill-congress p-1 text-center">${pill}</div>` : ''}
-	${!isMobile ? `<div class="overlay-box">
+	${theme.search('CEREMONIA') === -1 && theme.search('EXPO') === -1 && !isMobile ? `<div class="overlay-box">
 		<div class="overlay-inner">
 			<div class="content">
-				<img src="assets/img/nationalities/${getFlag('')}" />
+				<img src="assets/img/nationalities/${getFlag(nationality)}" />
 			</div>
 		</div>
 	</div>` : ''}`
